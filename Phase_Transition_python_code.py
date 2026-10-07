@@ -365,7 +365,7 @@ class Simulation:
         )
         print("starting")
         # Save the animation as a video
-        self.ani.save(r'C:\Users\T-Bone\python_work\Shapes_project\animation_output.mp4', writer='ffmpeg', fps=40)  # You can adjust the fps and filename
+        self.ani.save(animation_output.mp4', writer='ffmpeg', fps=40)  # You can adjust the fps and filename
         print("done")
         self.plot_energy()
 
