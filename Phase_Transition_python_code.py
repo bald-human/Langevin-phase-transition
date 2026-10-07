@@ -190,9 +190,6 @@ class Simulation:
         if log_step:
             self.force_magnitudes.extend(np.abs(F_scalar))   # log all pair forces this step
 
-        F_max = 60
-        F_scalar = np.clip(F_scalar, -F_max, F_max)
-
         F_vec = F_scalar[:, np.newaxis] * r_hat   # (num_pairs, 2)
 
         # --- scatter forces back onto each particle's acceleration ---
