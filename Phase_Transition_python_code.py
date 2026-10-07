@@ -381,12 +381,12 @@ EPSILON (bond)     : depth of the attractive well — how much thermal energy is
 gamma = 1.3
 T = 1.2
 cooling_rate = 0.01
-epsilon = 1.5
+epsilon = 2.4
 sigma = 3.0
-dt = 0.1
+dt = 0.05
 
-num_points= 100
-grid_size = 50
+num_points= 360
+grid_size = 100
 
 
 sim = Simulation(N=num_points, sim_time=20, grid_size=grid_size, dt=dt, gamma=gamma, T=T, cooling_rate=cooling_rate, epsilon=epsilon, sigma=sigma)
